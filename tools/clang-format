@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+set -Eeuo pipefail
+
+git ls-files "*.h" "*.c" "*.cpp" | xargs clang-format -style=file -i
